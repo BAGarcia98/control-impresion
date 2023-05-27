@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5a623;
+    background-image: linear-gradient(to right, #f57c00, #f5a623); /* Fondo degradado */
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .menu-toggle {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .menu {
+    display: none;
+    top: 0;
+    left: 0; /* Cambia el menú para que se despliegue por la izquierda */
+    background-color: #f5a623;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .menu a {
+    color: #fff;
+    margin-bottom: 5px;
+    text-decoration: none;
+  }
+  
+  .menu.active {
+    display: flex;
+  flex-direction: column;
+  right: 0; /* Alinea el menú desplegado a la derecha */
+  left: auto; /* Desplaza el menú desplegado hacia la derecha */
+  }
+  
+  .logo {
+    font-size: 50px; /* Cambia el tamaño de fuente a 24px */
+    margin-left: auto; /* Mueve el mensaje a la derecha */
+    margin: 1 auto;
+    order: 2;
+    color: black;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  /* Estilos del botón del menú desplegable */
+.dropdown-toggle {
+    border: none;         /* Elimina el borde */
+    background: none;     /* Elimina el fondo */
+    cursor: pointer;      /* Cambia el cursor al hacer clic */
+  
+    /* Otros estilos personalizados según tu preferencia */
+  }
+  
+  /* Estilos del icono del menú desplegable */
+  .icon {
+    font-size: 1.5rem;    /* Tamaño del icono */
+    color: #555;          /* Color del icono */
+  
+    /* Otros estilos personalizados según tu preferencia */
+  }
+  
+  /* Estilos del menú desplegable */
+  .dropdown-menu {
+    display: none;        /* Oculta el menú */
+  }
+  
+  .show {
+    display: block;       /* Muestra el menú al aplicar la clase "show" */
+  }
+  
+  .profile {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Estilos del menú desplegable */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+  
+  
